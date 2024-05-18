@@ -1,0 +1,52 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #E14D09;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+.memory-game {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  background-color: #ffb6b9; 
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px; 
+  font-weight: bold;
+}
+
+.card.flipped {
+  background-color: #99ffac; 
+}
+
+#score {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+#score-value {
+  font-weight: bold;
+  color: #333; 
+}
+

@@ -1,0 +1,107 @@
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  animation: changeBackground 10s infinite;
+  background: linear-gradient(to bottom right, 
+    rgba(252, 228, 236, 0.8), 
+    rgba(178, 223, 219, 0.8), 
+    rgba(255, 205, 210, 0.8), 
+    rgba(255, 236, 179, 0.8), 
+    rgba(225, 190, 231, 0.8)
+  );
+}
+
+@keyframes changeBackground {
+  0% { background-position: 0% 0%; } 
+  100% { background-position: 100% 100%; }
+}
+header {
+  text-align: center; 
+  padding: 20px 0; 
+}
+
+header h2 {
+  margin: 0; 
+  font-size: 24px;
+}
+
+@media (max-width: 600px) {
+  header h2 {
+    font-size: 20px; 
+  }
+}
+.exercise-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.column {
+  display: inline-block;
+  vertical-align: top;
+  margin: 20px;
+  width: 45%;
+  max-width: 400px;
+}
+
+.column h2 {
+  margin-bottom: 10px;
+  font-size: 24px; 
+  color: #333; 
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #ffd966; 
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 18px;
+  color: #333; 
+}
+
+li.selected {
+  background-color: #a5d6a7; 
+}
+
+li.correct {
+  background-color: #81c784; 
+}
+
+li.incorrect {
+  background-color: #e57373; 
+}
+
+button {
+  background-color: #ff7043; 
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 30px auto; 
+  display: block; 
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: #ff8a65; 
+}
+
+#result {
+  margin: 30px auto; 
+  font-size: 24px;
+  font-weight: bold;
+  color: #333; 
+}

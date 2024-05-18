@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe0b2; /* Fondo de color brillante */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  #trivia-container {
+    margin-bottom: 20px;
+  }
+  
+  #pregunta {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  
+  #opciones {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .opcion {
+    padding: 10px;
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .opcion:hover {
+    background-color: #e65100;
+  }
+  
+  #resultado {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #e65100;
+  }
+  
+  #siguiente-btn, #reset-btn {
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      max-width: 90%;
+    }
+  }
+  
+  

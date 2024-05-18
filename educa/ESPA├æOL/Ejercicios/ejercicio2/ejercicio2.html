@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asociación de Palabras - Juego para Niños</title>
+  <link rel="stylesheet" href="2estilo.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Asociación de Palabras</h1>
+    <p>Calificación: <span id="score">0</span></p>
+    <div id="game-container">
+      <div id="word-list">
+        <div class="word-item" data-word="perro">Perro</div>
+        <div class="word-item" data-word="gato">Gato</div>
+        <div class="word-item" data-word="oso">Oso</div>
+      </div>
+      <div id="image-list">
+        <div class="image-item" data-word="perro"><img src="img/perro.png" alt="Perro"></div>
+        <div class="image-item" data-word="gato"><img src="img/gato.png" alt="Gato"></div>
+        <div class="image-item" data-word="oso"><img src="img/oso.png" alt="Oso"></div>
+      </div>
+    </div>
+    <button id="submit-score" style="display: none;">Mostrar Calificación</button>
+  </div>
+  <script src="2.js"></script>
+</body>
+</html>
